@@ -3,8 +3,8 @@ import glob
 
 name = input()
 
-for file in glob.glob("D:/Down. application/Version 4.0/App/Downloaded/"+ name + ".mp4"):
+for file in glob.glob("D:/Deskop/App/"+ name + ".mp4"):
     print(file)
     videoclip = VideoFileClip(file)
     audioclip = videoclip.audio
-    audioclip.write_audiofile("D:/Down. application/Version 4.0/App/Downloaded/" + name + ".mp3")
+    audioclip.write_audiofile("D:/Deskop/App/" + name + ".mp3")
